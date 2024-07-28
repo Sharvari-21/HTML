@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .boxYash,
+        .boxSharvari,
+        .boxNaikwadi,
+        .boxPadyal {
+            height: 160px;
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 40px;
+        }
+        .boxYash {
+            background-color: purple;
+        }
+        .boxSharvari {
+            background-color: magenta;
+        }
+        .boxNaikwadi {
+            background-color: lightpink;
+        }
+        .boxPadyal {
+            background-color: beige;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .boxYash {
+                left: 0;
+            }
+            .boxSharvari {
+                left: 300px;
+            }
+            .boxNaikwadi {
+                left: 600px;
+            }
+            .boxPadyal {
+                left: 900px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .boxYash {
+                left: 0;
+            }
+            .boxSharvari {
+                left: 300px;
+            }
+            .boxNaikwadi {
+                top: 160px;
+                left: 0;
+            }
+            .boxPadyal {
+                top: 160px;
+                left: 300px;
+            }
+        }
+
+        @media screen and (max-width: 300px){
+            .boxYash{
+                left:0;
+            }
+            .boxSharvari{
+                top:180px;
+                left: 0px;
+            }
+            .boxNaikwadi{
+                top:340px;
+                left: 0px;
+            }
+            .boxPadyal{
+                top:500px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxYash">Yash</div>
+        <div class="boxSharvari">Sharvari</div>
+        <div class="boxNaikwadi">Naikwadi</div>
+        <div class="boxPadyal">Padyal</div>
+    </div>
+</body>
+</html>
